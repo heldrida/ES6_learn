@@ -1,4 +1,5 @@
 // following: http://www.frontendjournal.com/javascript-es6-learn-important-features-in-a-few-minutes/
+// http://es6-features.org/
 // class
 class Project {
 
