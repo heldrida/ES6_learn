@@ -1,3 +1,4 @@
+// following: http://www.frontendjournal.com/javascript-es6-learn-important-features-in-a-few-minutes/
 // class
 class Project {
 
@@ -15,8 +16,29 @@ class Project {
 
 }
 
-var project = new Project('Journal');
+class WebProject extends Project {
 
-var output = project.start();
+	constructor(name, technologies) {
+	
+		super(name);
 
-console.log(output);
+		this.technologies = technologies;
+	
+	}
+
+	info() {
+	
+		return this.name + ' uses ' + this.technologies;
+	
+	}
+
+}
+
+var webJournal = new WebProject('Frontend Journal', 'Javascript');
+
+var output1 = webJournal.start();
+
+var output2 = webJournal.info();
+
+console.log(output1);
+console.log(output2);
